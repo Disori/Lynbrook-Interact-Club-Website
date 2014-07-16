@@ -75,13 +75,17 @@
         </div>
 -->
         <div class="eventbanner">
-           <div class="container-fluid">>
+           <div class="container-fluid">
                    <div class="topeventbanner">
                        <div class="row-fluid">
                             <div class="col-md-3">
                                 <h3>Event #1</h3>
                                 <p style= "word-wrap: break-word">Work in Progggggss</p>
-                                <a href="#" class="btn btn-default">Read more</a>
+                                <a href="#" class="btn btn-default">Read more</a><small>
+                                <?php
+                                echo date('D, d M Y');
+                                ?>
+                                </small>
                             </div>
                             <div class="col-md-3">
                                 <h3>Event #2</h3>
@@ -128,7 +132,6 @@
                 </div>
             </div>
         </div>
-
         <div class="navbar navbar-default navbar-fixed-bottom">
             <div class="container">
                 <p class="navbar-text pull-left">&copy;Lynbrook Interact</p>
