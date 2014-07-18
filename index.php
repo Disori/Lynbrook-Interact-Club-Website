@@ -22,6 +22,7 @@
                     <div class="collapse navbar-collapse navHeaderCollapse">
                         <ul class="nav navbar-nav">
                             <li><a href="events.php">Events</a></li>
+                            <li><a href="#submit" data-toggle="modal">Submit an Event</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Calendar</a></li>
                             <li class="dropdown">
@@ -154,6 +155,35 @@
                         <a class = "btn btn-default" data-dismiss="modal">Submit</a>
                         <a class = "btn btn-primary" data-dismiss="modal">Close</a>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="submit">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form class="form-horizontal">
+                        <div class="modal-header">
+                            <h4> test </h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="post-title" class="col-lg-2 control-label">Title</label>
+                                <div class="col-lg-10">
+                                    <input type="text" class="form-control" id="post-title" placeholder="Your page title">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="post-info" class="col-lg-2 control-label">Information</label>
+                                <div class="col-lg-10">
+                                    <textarea class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a class = "btn btn-default" data-dismiss="modal">Close</a>
+                            <a class = "btn btn-primary" type="submit">Submit</a>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
