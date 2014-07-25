@@ -34,6 +34,15 @@
                                 </ul>
                             </li>
                         </ul>
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="username" placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="password" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-inverse">Sign In</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -81,7 +90,7 @@
                        <div class="row-fluid">
                             <div class="col-md-3">
                                 <h3>Event #1</h3>
-                                <p style= "word-wrap: break-word">Work in Progggggss</p>
+                                <p style= "word-wrap: break-word">Workgs</p>
                                 <a href="#" class="btn btn-default">Read more</a><small>
                                 <?php
                                 echo date('D, d M Y');
@@ -155,6 +164,50 @@
                         <a class = "btn btn-default" data-dismiss="modal">Submit</a>
                         <a class = "btn btn-primary" data-dismiss="modal">Close</a>
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="login">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <form class="form-horizontal">
+                        <div class="modal-header">
+                            <h4>Login</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row omb_row-sm-offset-3">
+                                <div class="col-xs-12 col-sm-6">
+                                    <form class="loginform" action="" autocomplete="off" method="POST">
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                            <input type="text" class="form-control" name="username" placeholder="email address">
+                                        </div>
+                                        <span class="help-block"></span>
+
+                                        <div class="input-group">
+                                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                            <input  type="password" class="form-control" name="password" placeholder="Password">
+                                        </div>
+                                        <span class="help-block">Password error</span>
+
+                                        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="row omb_row-sm-offset-3">
+                                <div class="col-xs-12 col-sm-3">
+                                    <label class="checkbox">
+                                        <input type="checkbox" value="remember-me">Remember Me
+                                    </label>
+                                </div>
+                                <div class="col-xs-12 col-sm-3">
+                                    <p class="omb_forgotPwd">
+                                        <a href="#">Forgot password?</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
