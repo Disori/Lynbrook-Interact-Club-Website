@@ -1,52 +1,9 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <title>Lynbrook Interact Club</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <link href="css/styles.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    </head>
+<?php include 'head.php'; ?>
     <body>
-        <div class="header">
-            <div class="navbar navbar-static-top navbar-inverse" role="navigation">
-                <div class="container">
-                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="index.php">Lynbrook Interact</a>
-                    <div class="collapse navbar-collapse navHeaderCollapse">
-                        <ul class="nav navbar-nav">
-                            <li><a href="events.php">Events</a></li>
-                            <li><a href="#submit" data-toggle="modal">Submit an Event</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Calendar</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-tottle" data-toggle="dropdown">Contact<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="https://www.facebook.com/groups/lynteract/">Facebook</a></li>
-                                    <li><a href="#contact" data-toggle="modal">Gmail</a></li>
-                                    <li><a href="https://www.facebook.com/groups/118239121602262/">District 5170</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form class="navbar-form navbar-right" role="search">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="username" placeholder="Username">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="password" placeholder="Password">
-                            </div>
-                            <button type="submit" class="btn btn-inverse">Sign In</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <?php include 'header.php' ?>
+
         <div id="carousel-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -74,16 +31,6 @@
             <span class="glyphicon glyphicon-chevron-right"></span>
           </a>
         </div>
-
-
-
-
-
-<!--
-        <div class="banner-image">
-                <img src="images/banner2.jpg" width="100%">
-        </div>
--->
         <div class="eventbanner">
            <div class="container-fluid">
                    <div class="topeventbanner">
@@ -142,106 +89,6 @@
                 </div>
             </div>
         </div>
-        <div class="navbar navbar-default navbar-fixed-bottom">
-            <div class="container">
-                <p class="navbar-text pull-left">&copy;Lynbrook Interact</p>
-                <p class="navbar-text pull-right">Made by Brandon Strong</p>
-            </div>
-
-        </div>
-
-
-        <div class="modal fade" id="contact">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h4> test </h4>
-                    </div>
-                    <div class="modal-body">
-                        <h3 style="word-wrap: break-word">Expect it working in <3 days(see what I did there :)</h3>
-                    </div>
-                    <div class="modal-footer">
-                        <a class = "btn btn-default" data-dismiss="modal">Submit</a>
-                        <a class = "btn btn-primary" data-dismiss="modal">Close</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="login">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <form class="form-horizontal">
-                        <div class="modal-header">
-                            <h4>Login</h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row omb_row-sm-offset-3">
-                                <div class="col-xs-12 col-sm-6">
-                                    <form class="loginform" action="" autocomplete="off" method="POST">
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                                            <input type="text" class="form-control" name="username" placeholder="email address">
-                                        </div>
-                                        <span class="help-block"></span>
-
-                                        <div class="input-group">
-                                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
-                                            <input  type="password" class="form-control" name="password" placeholder="Password">
-                                        </div>
-                                        <span class="help-block">Password error</span>
-
-                                        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="row omb_row-sm-offset-3">
-                                <div class="col-xs-12 col-sm-3">
-                                    <label class="checkbox">
-                                        <input type="checkbox" value="remember-me">Remember Me
-                                    </label>
-                                </div>
-                                <div class="col-xs-12 col-sm-3">
-                                    <p class="omb_forgotPwd">
-                                        <a href="#">Forgot password?</a>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="submit">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <form class="form-horizontal">
-                        <div class="modal-header">
-                            <h4> test </h4>
-                        </div>
-                        <div class="modal-body">
-                            <div class="form-group">
-                                <label for="post-title" class="col-lg-2 control-label">Title</label>
-                                <div class="col-lg-10">
-                                    <input type="text" class="form-control" id="post-title" placeholder="Your page title">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="post-info" class="col-lg-2 control-label">Information</label>
-                                <div class="col-lg-10">
-                                    <textarea class="form-control"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <a class = "btn btn-default" data-dismiss="modal">Close</a>
-                            <a class = "btn btn-primary" type="submit">Submit</a>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-<!--I know this whole website is very ugly and is using default boostrap, but when I have more time I'll be making this look amazing.-->
-        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-        <script src="js/bootstrap.js"></script>
+        <?php include 'misc.php' ?>
     </body>
 </html>
