@@ -10,9 +10,6 @@
                 <a class="navbar-brand" href="index.php">Lynbrook Interact</a>
                 <div class="collapse navbar-collapse navHeaderCollapse">
                     <ul class="nav navbar-nav">
-                        <li><a href="events.php">Events</a></li>
-                        <li><a href="#submit" data-toggle="modal">Submit an Event</a></li>
-                        <li><a href="#">About</a></li>
                         <li><a href="#">Calendar</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-tottle" data-toggle="dropdown">Contact<b class="caret"></b></a>
@@ -23,15 +20,17 @@
                             </ul>
                         </li>
                     </ul>
-                    <form class="navbar-form navbar-right" role="search" action="login.php" method="POST">
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="username" placeholder="Username">
-                        </div>
-                        <div class="form-group">
-                            <input type="password" class="form-control" name="password" placeholder="Password">
-                        </div>
-                        <button type="submit" class="btn btn-custom">Sign In</button>
-                    </form>
+                    <?php
+                    if(isset($_SESSION['login'])) {
+                            if($_SESSION['login'] == 1) {
+                                include 'loggedinheader.php';
+                            } else {
+                            include 'loginheader.php';
+                        }
+                    } else {
+                        include 'loginheader.php';
+                    }
+                    ?>
                 </div>
             </div>
         </div>

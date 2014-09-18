@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <html>
 <?php include 'head.php'; ?>
     <body>
@@ -37,12 +38,8 @@
                        <div class="row-fluid">
                             <div class="col-md-3">
                                 <h3>Event #1</h3>
-                                <p style= "word-wrap: break-word">Workgs</p>
-                                <a href="#" class="btn btn-default">Read more</a><small>
-                                <?php
-                                echo date('D, d M Y');
-                                ?>
-                                </small>
+                                <p style= "word-wrap: break-word">Work in progress</p>
+                                <a href="#" class="btn btn-default">Read more</a>
                             </div>
                             <div class="col-md-3">
                                 <h3>Event #2</h3>

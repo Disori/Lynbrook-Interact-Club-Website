@@ -16,5 +16,4 @@
   ga('send', 'pageview');
 
 </script>
-<?php include 'db/init.php'; ?>
 </head>

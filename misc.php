@@ -22,24 +22,54 @@
         </div>
     </div>
 </div>
-<div class="modal fade" id="submit">
+<div class="modal fade" id="register">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form class="form-horizontal">
+            <form class="form-horizontal" action="register.php" method="POST">
                 <div class="modal-header">
-                    <h4> test </h4>
+                    <h4> Registration Form </h4>
                 </div>
                 <div class="modal-body">
                     <div class="form-group">
-                        <label for="post-title" class="col-lg-2 control-label">Title</label>
+                        <label for="post-title" class="col-lg-2 control-label">First Name</label>
                         <div class="col-lg-10">
-                            <input type="text" class="form-control" id="post-title" placeholder="Your page title">
+                            <input type="text" class="form-control" name="firstname" placeholder="John">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="post-info" class="col-lg-2 control-label">Information</label>
+                        <label for="post-info" class="col-lg-2 control-label">Last Name</label>
                         <div class="col-lg-10">
-                            <textarea class="form-control"></textarea>
+                            <input type="text" class="form-control" name="lastname" placeholder="Doe">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="post-info" class="col-lg-2 control-label">Email</label>
+                        <div class="col-lg-10">
+                            <input type="email" class="form-control" name="email" placeholder="example@exaple.com">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="post-info" class="col-lg-2 control-label">Graduation Year</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" name="gradyear" placeholder="2017">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="post-info" class="col-lg-2 control-label">Username</label>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" name="username" placeholder="johndoe">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="post-info" class="col-lg-2 control-label">Password</label>
+                        <div class="col-lg-10">
+                            <input type="password" class="form-control" name="password" placeholder="passwordisabadpassword">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="post-info" class="col-lg-2 control-label">Password</label>
+                        <div class="col-lg-10">
+                            <input type="password" class="form-control" name="passwordverif" placeholder="chooseauniquepassword">
                         </div>
                     </div>
                 </div>
