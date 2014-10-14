@@ -3,7 +3,7 @@
     session_start();
     $host="localhost"; // Host name
     $username="interact"; // Mysql username
-    $password="nimmo99"; // Mysql password
+    $password="password"; // Mysql password
     $db_name="interact"; // Database name
     $tbl_name="users"; // Table name
     // Connect to server and select databse.
